@@ -18,6 +18,13 @@
     font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
     font-weight: 400
 }
+.navf {
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+    font-weight: 600
+}
 .column {
     float: left;
     width: 33.33%;
@@ -44,7 +51,7 @@ body {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px;
+  padding: 30px;
   text-decoration: none;
 }
 
@@ -67,16 +74,18 @@ body {
 </style>
 </head>
 <!--god fucking damnit stop telling me its wrong WHAT THE FUCK AM I DOING WRONG fucking hell adobe why are you such an asshole. your asking for what i LITERALLY FUCKING DID. i swear to god please just fucking work-->
-<body>
-	
-<div id="navbar">
-  <a href="#contact">Contact</a>
-  <a href="#ceramics">Ceramics</a>
-  <a href="#digital">Digital</a>
-  <a href="#drawing">Drawing</a>
-  <a href="#design">Design</a>
-  <a href="#about">About</a>
+
+	<div id="navbar">
+  <a href="#contact" class="navf">Contact</a>
+  <a href="#ceramics" class="navf">Ceramics</a>
+  <a href="#digital" class="navf">Digital</a>
+  <a href="#drawing" class="navf">Drawing</a>
+  <a href="#design" class="navf">Design</a>
+  <a href="#about" class="navf">About</a>
 </div> 
+
+	
+<body>
 	
 	
 <div style="background-color: white;">
@@ -118,18 +127,12 @@ body {
 </div>
 <!--listen here you little fucking shit i WILL put javascript into my website and theres nothing you can do to fucking stop me. please just work so i can fucking sleep tonight. i really wanna fucking sleep god damnit just WORK-->
 <script>
-window.onscroll = function() {myFunction()};
-
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
+navbar.classList.add("sticky")
+ 
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.add("sticky");
-  }
-}
 </script>
 </body>
 </html>
+
